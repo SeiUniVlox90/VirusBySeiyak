@@ -1,0 +1,94 @@
+local Virus_Loader = Instance.new("ScreenGui")
+local Loader = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Msg = Instance.new("TextLabel")
+local Yes = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local No = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+Virus_Loader.Name = "Virus_Loader"
+Virus_Loader.Parent = game.CoreGui
+Virus_Loader.ResetOnSpawn = false
+
+Loader.Name = "Loader"
+Loader.Parent = Virus_Loader
+Loader.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Loader.BorderSizePixel = 0
+Loader.Position = UDim2.new(0.44534412, -167, 0.439759046, -99)
+Loader.Size = UDim2.new(0, 442, 0, 257)
+Loader.Active = true
+Loader.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Loader
+
+Msg.Name = "Msg"
+Msg.Parent = Loader
+Msg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Msg.BackgroundTransparency = 1.000
+Msg.Position = UDim2.new(0.00738263037, 0, 0.40310657, 0)
+Msg.Size = UDim2.new(0, 435, 0, 50)
+Msg.Font = Enum.Font.Gotham
+Msg.Text = "N/A"
+Msg.TextColor3 = Color3.fromRGB(255, 255, 255)
+Msg.TextSize = 25.000
+
+Yes.Name = "Yes"
+Yes.Parent = Loader
+Yes.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Yes.Position = UDim2.new(0.490950227, 0, 0.828793764, 0)
+Yes.Size = UDim2.new(0, 110, 0, 37)
+Yes.Font = Enum.Font.Gotham
+Yes.Text = "Yes"
+Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yes.TextSize = 18.000
+
+UICorner_2.Parent = Yes
+
+No.Name = "No"
+No.Parent = Loader
+No.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+No.Position = UDim2.new(0.228506789, 0, 0.828793764, 0)
+No.Size = UDim2.new(0, 110, 0, 37)
+No.Font = Enum.Font.Gotham
+No.Text = "No"
+No.TextColor3 = Color3.fromRGB(255, 255, 255)
+No.TextSize = 18.000
+
+UICorner_3.Parent = No
+
+local function Seiyak_Script()
+	local script = Instance.new('LocalScript', Loader)
+
+	local Loader = script.Parent
+	local Yes = script.Parent.Yes
+	local No = script.Parent.No
+	local Msg = script.Parent.Msg
+	
+	Msg.Text = "Loader:Do you want to continue?"
+	
+	Loader.Position = UDim2.new(0.445, -167,1.44, -99)
+	wait(0.5)
+	Loader:TweenPosition(UDim2.new(0.445, -167,0.44, -99),"In","Sine",2,false)
+	
+	Yes.MouseButton1Click:Connect(function()
+			Msg.Text = "Loader:Ok just wait 5 sec..."
+			wait(0.5)
+			Msg.Text = "Loader:Ok just wait 5 sec.."
+			wait(0.5)
+		Msg.Text = "Loader:Ok just wait 5 sec."
+		wait(0.5)
+		Msg.Text = "Loader:Ok just wait 5 sec"
+		wait(5)
+		loadstring(game:HttpGet(""))()
+	end)
+	
+	No.MouseButton1Click:Connect(function()
+		Msg.Text = "Loader:Destroying Gui wait 5 sec..."
+		wait(5)
+		Loader.Visible = false
+	end)
+	
+end
+coroutine.wrap(Seiyak_Script)()
