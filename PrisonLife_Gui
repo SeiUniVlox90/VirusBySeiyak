@@ -92,6 +92,14 @@ Pistol.Font = Enum.Font.LuckiestGuy
 Pistol.Text = "Get:Pistol"
 Pistol.TextColor3 = Color3.fromRGB(255, 255, 255)
 Pistol.TextSize = 14.000
+Pistol.MouseButton1Click:connect(function()
+   local Weapon = {"M9"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+end)
 
 UICorner_4.Parent = Pistol
 
@@ -104,6 +112,14 @@ Rifle.Font = Enum.Font.LuckiestGuy
 Rifle.Text = "Get:Rifle"
 Rifle.TextColor3 = Color3.fromRGB(255, 255, 255)
 Rifle.TextSize = 14.000
+Rifle.MouseButton1Click:connect(function()
+    local Weapon = {"AK-47"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+end)
 
 UICorner_5.Parent = Rifle
 
@@ -116,6 +132,14 @@ Shotgun.Font = Enum.Font.LuckiestGuy
 Shotgun.Text = "Get:Shotgun"
 Shotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
 Shotgun.TextSize = 14.000
+Shotgun.MouseButton1Click:connect(function()
+ local Weapon = {"Remington 870"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+end)
 
 UICorner_6.Parent = Shotgun
 
@@ -128,6 +152,11 @@ Speed.Font = Enum.Font.LuckiestGuy
 Speed.Text = "50 Speed"
 Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speed.TextSize = 14.000
+Speed.MouseButton1Click:connect(function()
+	local speed = 70
+		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
+		game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (speed * 1.5)
+end)
 
 UICorner_7.Parent = Speed
 
