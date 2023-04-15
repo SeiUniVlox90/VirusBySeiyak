@@ -82,6 +82,8 @@ local function Seiyak_Script()
 		Msg.Text = "Loader:Ok just wait 5 sec"
 		wait(5)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SeiUniVlox90/VirusBySeiyak/main/PrisonLife_Gui"))()
+		wait(0.5)
+		Loader.Visible = false
 	end)
 	
 	No.MouseButton1Click:Connect(function()
