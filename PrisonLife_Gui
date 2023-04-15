@@ -1,0 +1,278 @@
+local Virus_PrisonLife = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Side = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Home = Instance.new("TextButton")
+local Main_2 = Instance.new("TextButton")
+local Pages = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Pistol = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Rifle = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Shotgun = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local HomeFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local FpsCounterLabel = Instance.new("TextLabel")
+local RegionLabel = Instance.new("TextLabel")
+
+Virus_PrisonLife.Name = "Virus_PrisonLife"
+Virus_PrisonLife.Parent = game.CoreGui
+Virus_PrisonLife.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = Virus_PrisonLife
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Main.Position = UDim2.new(0.5, -161, 0.5, -133)
+Main.Size = UDim2.new(0, 322, 0, 266)
+Main.Active = true
+Main.Draggable = true
+
+UICorner.Parent = Main
+
+Side.Name = "Side"
+Side.Parent = Main
+Side.BackgroundColor3 = Color3.fromRGB(0, 0, 127)
+Side.Position = UDim2.new(-0.00207039714, 0, -0.000150978565, 0)
+Side.Size = UDim2.new(0, 55, 0, 265)
+
+UICorner_2.Parent = Side
+
+Home.Name = "Home"
+Home.Parent = Side
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(-0.00310557964, 0, 0, 0)
+Home.Size = UDim2.new(0, 55, 0, 39)
+Home.Font = Enum.Font.Gotham
+Home.Text = "HOME"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 14.000
+
+Main_2.Name = "Main"
+Main_2.Parent = Side
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.Position = UDim2.new(-0.00310557964, 0, 0.147169814, 0)
+Main_2.Size = UDim2.new(0, 55, 0, 41)
+Main_2.Font = Enum.Font.Gotham
+Main_2.Text = "MAIN"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextSize = 14.000
+
+Pages.Name = "Pages"
+Pages.Parent = Main
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Position = UDim2.new(0.16770187, 0, 0, 0)
+Pages.Size = UDim2.new(0, 268, 0, 265)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Pages
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 127)
+MainFrame.Position = UDim2.new(0.0479201972, 0, 0.0449617989, 0)
+MainFrame.Size = UDim2.new(0, 243, 0, 240)
+
+UICorner_3.Parent = MainFrame
+
+Pistol.Name = "Pistol"
+Pistol.Parent = MainFrame
+Pistol.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Pistol.Position = UDim2.new(0.0251386613, 0, 0.0376879647, 0)
+Pistol.Size = UDim2.new(0, 229, 0, 35)
+Pistol.Font = Enum.Font.LuckiestGuy
+Pistol.Text = "Get:Pistol"
+Pistol.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pistol.TextSize = 14.000
+
+UICorner_4.Parent = Pistol
+
+Rifle.Name = "Rifle"
+Rifle.Parent = MainFrame
+Rifle.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Rifle.Position = UDim2.new(0.0251386613, 0, 0.216854632, 0)
+Rifle.Size = UDim2.new(0, 229, 0, 35)
+Rifle.Font = Enum.Font.LuckiestGuy
+Rifle.Text = "Get:Rifle"
+Rifle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rifle.TextSize = 14.000
+
+UICorner_5.Parent = Rifle
+
+Shotgun.Name = "Shotgun"
+Shotgun.Parent = MainFrame
+Shotgun.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Shotgun.Position = UDim2.new(0.0251386613, 0, 0.396021307, 0)
+Shotgun.Size = UDim2.new(0, 229, 0, 35)
+Shotgun.Font = Enum.Font.LuckiestGuy
+Shotgun.Text = "Get:Shotgun"
+Shotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shotgun.TextSize = 14.000
+
+UICorner_6.Parent = Shotgun
+
+Speed.Name = "Speed"
+Speed.Parent = MainFrame
+Speed.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Speed.Position = UDim2.new(0.0251386613, 0, 0.575187922, 0)
+Speed.Size = UDim2.new(0, 229, 0, 35)
+Speed.Font = Enum.Font.LuckiestGuy
+Speed.Text = "50 Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 14.000
+
+UICorner_7.Parent = Speed
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Pages
+HomeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 127)
+HomeFrame.Position = UDim2.new(0.0448146015, 0, 0.0449617989, 0)
+HomeFrame.Size = UDim2.new(0, 243, 0, 240)
+
+UICorner_8.Parent = HomeFrame
+
+TextLabel.Parent = HomeFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.00411522621, 0, 0.0458333343, 0)
+TextLabel.Size = UDim2.new(0, 241, 0, 50)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "Virus_Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+
+TextLabel_2.Parent = HomeFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.00823045243, 0, 0.254166663, 0)
+TextLabel_2.Size = UDim2.new(0, 241, 0, 32)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Credits"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_2.TextSize = 20.000
+
+TextLabel_3.Parent = HomeFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.00823045243, 0, 0.387499988, 0)
+TextLabel_3.Size = UDim2.new(0, 241, 0, 32)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "#badingh_321"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 10.000
+
+FpsCounterLabel.Name = "FpsCounterLabel"
+FpsCounterLabel.Parent = HomeFrame
+FpsCounterLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FpsCounterLabel.BackgroundTransparency = 1.000
+FpsCounterLabel.Position = UDim2.new(0.0898286328, 0, 0.829952836, 0)
+FpsCounterLabel.Size = UDim2.new(0, 200, 0, 34)
+FpsCounterLabel.Font = Enum.Font.FredokaOne
+FpsCounterLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+FpsCounterLabel.TextSize = 20.000
+
+RegionLabel.Name = "RegionLabel"
+RegionLabel.Parent = HomeFrame
+RegionLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RegionLabel.BackgroundTransparency = 1.000
+RegionLabel.Position = UDim2.new(0.0857134089, 0, 0.688286185, 0)
+RegionLabel.Size = UDim2.new(0, 200, 0, 34)
+RegionLabel.Font = Enum.Font.FredokaOne
+RegionLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+RegionLabel.TextSize = 20.000
+
+-- Scripts:
+
+local function TZJUDFG_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local Home = script.Parent.Side.Home
+	local Main = script.Parent.Side.Main
+	
+	local MainBoard = script.Parent
+	local HomeFrame = script.Parent.Pages.HomeFrame
+	local MainFrame = script.Parent.Pages.MainFrame
+	
+	Home.MouseButton1Click:Connect(function()
+		HomeFrame.Visible = true
+		MainFrame.Visible = false
+	end)
+	Main.MouseButton1Click:Connect(function()
+		HomeFrame.Visible = false
+		MainFrame.Visible = true
+	end)
+	
+	local gui = game.Players.LocalPlayer.PlayerGui:WaitForChild("Virus_PrisonLife")
+	local input = game:GetService("UserInputService")
+	
+	local function toggleGui()
+		gui.Enabled = not gui.Enabled
+	end
+	
+	input.InputBegan:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.RightShift then
+			toggleGui()
+		end
+	end)
+	
+end
+coroutine.wrap(TZJUDFG_fake_script)()
+local function QXQT_fake_script() -- FpsCounterLabel.LocalScript 
+	local script = Instance.new('LocalScript', FpsCounterLabel)
+
+	local lastUpdate = tick()
+	local frameCount = 0
+	local label = script.Parent
+	
+	local function updateCounter()
+		local now = tick()
+		frameCount = frameCount + 1
+	
+		if now - lastUpdate >= 1 then
+			local fps = math.floor(frameCount / (now - lastUpdate))
+			label.Text = "FPS: " .. tostring(fps)
+			frameCount = 0
+			lastUpdate = now
+		end
+	end
+	
+	game:GetService("RunService").RenderStepped:Connect(updateCounter)
+end
+coroutine.wrap(QXQT_fake_script)()
+local function CHEEH_fake_script() -- RegionLabel.LocalScript 
+	local script = Instance.new('LocalScript', RegionLabel)
+
+	local label = script.Parent
+	
+	local function updateRegionLabel()
+		local player = game.Players.LocalPlayer
+		local character = player.Character
+	
+		if character then
+			local region = game:GetService("Workspace"):FindFirstChildWhichIsA("Region3", true)
+	
+			if region then
+				local min, max = region:GetBoundingBox()
+				local regionName = tostring(region.Name)
+	
+				label.Text = "Region: " .. regionName
+			end
+		end
+	end
+	
+	-- connect to the HumanoidRootPart changed event to update the region label
+	game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
+		character:WaitForChild("HumanoidRootPart").Changed:Connect(updateRegionLabel)
+	end)
+	
+	updateRegionLabel()
+end
+coroutine.wrap(CHEEH_fake_script)()
